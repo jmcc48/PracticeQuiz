@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .question { margin-bottom: 20px; }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <form id="quiz-form">
+            <form id="quiz-form">
+                <div class="question" id="question-1">
+                    <label>1. The graph below shows two points: (2, 2) and (4, 0). What would the slope of the line be that would connect the two points?</label>
+                    <div id="plot1" style="width:100%;max-width:400px;height:300px;"></div>
+                    <div>
+                        <input type="radio" id="q1a" name="q1" value="1">
+                        <label for="q1a">1</label><br>
+                        <input type="radio" id="q1b" name="q1" value="-1/2">
+                        <label for="q1b">-1/2</label><br>
+                        <input type="radio" id="q1c" name="q1" value="2">
+                        <label for="q1c">2</label><br>
+                        <input type="radio" id="q1d" name="q1" value="-1">
+                        <label for="q1d">-1</label>
+                    </div>
+                    <div class="solution" id="solution-q1" style="display:none;"></div>
+                </div>
+                <div class="question" id="question-2">
+                    <label>2. The graph below shows two points: (2, 3) and (-1, 1). What is the equation of the line connecting these two points?</label>
+                    <div id="plot2" style="width:100%;max-width:400px;height:300px;"></div>
+                    <div>
+                        <input type="radio" id="q2a" name="q2" value="y = x/3 + 5/3">
+                        <label for="q2a">y = x/3 + 5/3</label><br>
+                        <input type="radio" id="q2b" name="q2" value="y = 2x/3 + 5/3">
+                        <label for="q2b">y = 2x/3 + 5/3</label><br>
+                        <input type="radio" id="q2c" name="q2" value="y = -2x/3 + 4/3">
+                        <label for="q2c">y = -2x/3 + 4/3</label><br>
+                        <input type="radio" id="q2d" name="q2" value="y = x/2 + 2">
+                        <label for="q2d">y = x/2 + 2</label>
+                    </div>
+                    <div class="solution" id="solution-q2" style="display:none;"></div>
+                </div>
+                <div class="question" id="question-3">
+                    <label>3. Look at the graph below. What is the y-intercept of this line?</label>
+                    <div id="plot3" style="width:100%;max-width:400px;height:300px;"></div>
+                    <div>
+                        <input type="radio" id="q3a" name="q3" value="-2">
+                        <label for="q3a">-2</label><br>
+                        <input type="radio" id="q3b" name="q3" value="-3/2">
+                        <label for="q3b">-3/2</label><br>
+                        <input type="radio" id="q3c" name="q3" value="4/3">
+                        <label for="q3c">4/3</label><br>
+                        <input type="radio" id="q3d" name="q3" value="1/2">
+                        <label for="q3d">1/2</label>
+                    </div>
+                    <div class="solution" id="solution-q3" style="display:none;"></div>
+                </div>
+                <div class="question" id="question-4">
+                    <label>4. Look at the graph below. What is the slope of this line?</label>
+                    <div id="plot4" style="width:100%;max-width:400px;height:300px;"></div>
+                    <div>
+                        <input type="radio" id="q4a" name="q4" value="3">
+                        <label for="q4a">3</label><br>
+                        <input type="radio" id="q4b" name="q4" value="2">
+                        <label for="q4b">2</label><br>
+                        <input type="radio" id="q4c" name="q4" value="-2">
+                        <label for="q4c">-2</label><br>
+                        <input type="radio" id="q4d" name="q4" value="5/2">
+                        <label for="q4d">5/2</label>
+                    </div>
+                    <div class="solution" id="solution-q4" style="display:none;"></div>
+                </div>
+                <div class="question" id="question-5">
+                    <label>5. Look at the graph below. What is the x-intercept of the line?</label>
+                    <div id="plot5" style="width:100%;max-width:400px;height:300px;"></div>
+                    <div>
+                        <input type="radio" id="q5a" name="q5" value="-4">
+                        <label for="q5a">-4</label><br>
+                        <input type="radio" id="q5b" name="q5" value="0">
+                        <label for="q5b">0</label><br>
+                        <input type="radio" id="q5c" name="q5" value="2">
+                        <label for="q5c">2</label><br>
+                        <input type="radio" id="q5d" name="q5" value="1">
+                        <label for="q5d">1</label>
+                    </div>
+                    <div class="solution" id="solution-q5" style="display:none;"></div>
+                </div>
+                <button type="submit">Submit Quiz</button>
+                <div class="result" id="result"></div>
+            </form>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="quiz.js"></script>
+</body>
